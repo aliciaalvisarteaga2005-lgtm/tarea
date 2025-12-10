@@ -1,81 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portada | Currículum & Programación 3</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            padding: 80px 20px;
-            background: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        p {
-            margin-top: 10px;
-            font-size: 1.1rem;
-            color: #555;
-        }
-
-        .links {
-            margin: 40px auto;
-            max-width: 500px;
-            text-align: center;
-        }
-
-        .btn {
-            display: block;
-            margin: 15px auto;
-            padding: 15px 20px;
-            width: 80%;
-            background: #222;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Mi Portada de Currículum</h1>
-    <p>Universidad Privada Domingo Savio – Programación 3</p>
-</header>
-
-<section class="links">
-    <a class="btn" href="TU_ENLACE_A_TU_BLOG_AQUI" target="_blank">📘 Blog de Programación 3 (Tareas y Prácticos)</a>
-
-    <a class="btn" href="cv.html">📄 Ver mi Currículum</a>
-</section>
-
-<footer>
-    © 2025 | Estudiante de Programación 3 – UPDS
-</footer>
+<html lang="es"> 
+    <head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Portada - Programación 3 | UPDS</title> 
+        <style> 
+            body { 
+                font-family: Arial, Helvetica, sans-serif; 
+                margin: 0; 
+                background: #f2f2f2; 
+            } 
+            header { 
+                background: #003366;
+                color: white; 
+                padding: 40px 20px; 
+                text-align: center; 
+            } 
+            header h1 { 
+                margin: 0; font-size: 40px; 
+            } 
+            nav { 
+                background: #002244; 
+                padding: 10px; 
+                text-align: center; 
+            } 
+            nav a { 
+                color: #ffffff;
+                margin: 0 15px; 
+                text-decoration: none; 
+                font-weight: bold; 
+            } 
+            .container { 
+                width: 90%; 
+                max-width: 900px;
+                margin: auto; 
+                background: white; 
+                padding: 20px; 
+                margin-top: 25px; 
+                border-radius: 10px; 
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h2 { 
+                color: #003366; 
+            }
+            ul { 
+                line-height: 1.8em;
+            } 
+            footer { 
+                background: #003366; 
+                color: white; 
+                text-align: center;
+                padding: 15px; 
+                margin-top: 30px; 
+            }
+            .btn { 
+                display: inline-block; 
+                padding: 10px 15px; 
+                background: #0055aa; 
+                color: white; 
+                border-radius: 5px;
+                text-decoration: none; 
+                margin-top: 15px; 
+            } 
+            .btn:hover {
+                background: #003f7f; 
+            }
+        </style> 
+    </head> 
+    <body> 
+        <header> <h1>Programación 3</h1> 
+            <p>Universidad Privada Domingo Savio (UPDS)</p> 
+        </header> 
+        <nav> <a href="#sobre-mi">Sobre mí</a> 
+            <a href="#intro">Introducción</a> 
+            <a href="#tareas">Mis Tareas</a> 
+        </nav>
+        <div class="container" id="sobre-mi"> 
+            <h2>Sobre mí</h2>
+            <p> Hola, mi nombre es <strong>Ana Maribel Maydana Espejo</strong>. Soy estudiante de la materia <strong>Programación 3</strong> en la UPDS y este sitio servirá como un 
+                índice donde organizaré mis tareas, prácticas y ejercicios de C++ desarrollados durante el semestre. </p> 
+        </div> 
+        <div class="container" id="intro"> 
+            <h2>Introducción a la Programación</h2>
+            <p> La programación es el proceso de crear instrucciones que una computadora puede seguir para realizar tareas específicas. 
+                En el lenguaje C++, que estudiamos en Programación 3, se aprende a desarrollar algoritmos eficientes, manejar estructuras de datos, aplicar conceptos de programación 
+                orientada a objetos y construir soluciones a problemas reales. </p> <p> Este blog servirá como repositorio personal para almacenar mis avances, prácticas y ejercicios 
+                    desarrollados en la materia. </p> 
+        </div> 
+        <div class="container" id="tareas"> 
+            <h2>Índice de Tareas (Programación 3)</h2>
+            <p>A continuación se listan las tareas. Cada una tendrá su enlace más adelante:</p>
+            <ul> <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/puntero.cpp" target="_blank" >Tarea 1 – Punteros </a></li>
+                <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/administracionmemoria.cpp" target="_blank">Tarea 2 – Administracion de memoria</a></li>
+                <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/listaenlace.cpp" target="_blank" >Tarea 3 – Lista Enlace</a></li>
+                <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/sobrecargasuma.cpp" target="_blank">Tarea 4 – Sobrecarga de Suma</a></li> 
+                <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/mostrar().cpp"target="_blank">Tarea 5 – Mostrar()</a></li>
+                <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/dibujar.cpp "target="_blank">Tarea 6 – Dibujar</a></li> 
+                <li><a href="https://github.com/AnaMaydana/programacion3/blob/main/mostrar(2).cpp "target="_blank">Tarea 7 – Mostrar(2)</a></li> 
+            </ul> 
+            <a href="#" class="btn">Ir al Blog de Programación 3</a> 
+        </div> 
+        <footer> © 2025 - Mi Blog de Programación 3 - UPDS </footer>
 
 </body>
 </html>
